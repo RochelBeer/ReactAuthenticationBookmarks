@@ -23,15 +23,12 @@ const MyBookmarks = () => {
   const onDelete = async (bookmark) => {
       await axios.post('/api/bookmark/delete', bookmark)
     getBookmarks();
-
     navigate('/mybookmarks')
   }
 const onUpdate = async (bookmark) =>{
     await axios.post('/api/bookmark/edit', bookmark)
   getBookmarks();
 }
-
-
   return (
     <div style={{ marginTop: 20 }}>
       <div className="row">
@@ -57,7 +54,6 @@ const onUpdate = async (bookmark) =>{
         </table>
       </div>
     </div>
-
   )
 }
 export default MyBookmarks

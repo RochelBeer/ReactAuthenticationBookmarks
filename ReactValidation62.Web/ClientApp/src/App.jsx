@@ -13,11 +13,6 @@ import { ContextComponent } from './Context';
 import PrivateRoute from './PrivateRoute';
 
 const App = () => {
-
-
-
-
-
     return (
         <ContextComponent>
             <Layout>
@@ -32,8 +27,7 @@ const App = () => {
                     <Route exact path='/mybookmarks' element={
                         <PrivateRoute>
                             <MyBookmarks />
-                        </PrivateRoute>
-                    } />
+                        </PrivateRoute>} />
                     <Route exact path='/logout' element={
                         <PrivateRoute>
                             <Logout />
@@ -41,9 +35,6 @@ const App = () => {
                 </Routes>
             </Layout>
         </ContextComponent>
-
     );
-
 };
-
 export default App;

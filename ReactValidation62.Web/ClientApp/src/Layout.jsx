@@ -5,7 +5,6 @@ const Layout = ({ children }) => {
     const { user } = useAuth();
 
     return (
-
         <div>
             <nav className="navbar navbar-expand-sm navbar-dark fixed-top bg-dark border-bottom box-shadow">
                 <div className="container">
@@ -49,12 +48,10 @@ const Layout = ({ children }) => {
                                     </Link>
                                 </li>
                             </>}
-
                         </ul>
                     </div>
                 </div>
             </nav>
-
 
             <div className="container" style={{ marginTop: 60 }}>
                 {children}
@@ -63,5 +60,4 @@ const Layout = ({ children }) => {
         </div>
     )
 }
-
 export default Layout;

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 
 const Signup = () => {
@@ -12,11 +12,10 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const onTextChange = e => {
-    const copy = {...signupUser};
+    const copy = { ...signupUser };
     copy[e.target.name] = e.target.value;
     setSignupUser(copy);
   }
-
 
   const onSubmit = async e => {
     e.preventDefault();
@@ -76,7 +75,6 @@ const Signup = () => {
         </div>
       </main>
     </div>
-
   )
 }
 export default Signup

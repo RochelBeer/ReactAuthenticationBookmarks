@@ -17,8 +17,7 @@ const AddBookmark = () => {
     e.preventDefault();
     await axios.post('/api/bookmark/addbookmark', bookmark)
     navigate('/mybookmarks')
-
-  }
+    }
   return (
     <div
       className="row"

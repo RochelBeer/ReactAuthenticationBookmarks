@@ -24,7 +24,13 @@ const MyBookmarkRow = ({ currentUser, onDelete, onUpdate }) => {
     return (
         <tr>
             {!isEditing ? <td>{title}</td> :
-                <input type="text" class="form-control" placeholder="Title" value={updatedBookmark.title} onChange={onTitleTextChange} name="title"></input>
+                <input type="text"
+                    class="form-control"
+                    placeholder="Title"
+                    value={updatedBookmark.title}
+                    onChange={onTitleTextChange}
+                    name="title">
+                </input>
             } <td>
                 <a href={url} target="_blank">
                     {url}

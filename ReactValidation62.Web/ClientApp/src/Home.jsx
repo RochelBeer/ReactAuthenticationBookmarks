@@ -7,7 +7,6 @@ const Home = () => {
     useEffect(() => {
         const getUrls = async () => {
             const { data } = await axios.get('/api/bookmark/gettop5bookmarks')
-            console.log(data)
             setTop5UrlList(data)
         }
         getUrls();
@@ -32,8 +31,6 @@ const Home = () => {
                 </div>
             </main>
         </div>
-
     )
 }
-
 export default Home
